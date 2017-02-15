@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 if [[ $UPDATE  =~ true || $UPDATE =~ 1 || $UPDATE =~ yes ]]; then
     echo "==> Applying updates"
-    dnf -y update
+    dnf -y upgrade
 
     # reboot
     echo "Rebooting the machine..."
